@@ -6,7 +6,7 @@ Creates a solid site header with logo, menus for desktop and mobile and widgets.
 
 ---
 
-Version: 1.0.5
+Version: 1.0.6
 
 Author: Ben @ https://modularity.group
 
@@ -38,6 +38,8 @@ add_action("feature_responsive_header_end", "feature_responsive_header_widgets",
 ```
 
 ---
+
+1.0.6 | update hooks with `config-site-template`
 
 1.0.5 | manage body `is-scrolled` class & extend docs
 

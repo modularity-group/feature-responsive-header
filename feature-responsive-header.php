@@ -3,7 +3,7 @@
 add_theme_support("custom-logo");
 
 add_action("init", function(){
-  remove_action("modularity_template_header", "config_base_template_header");
+  remove_action("wp_body_open", "site_template_header");
 });
 
 function feature_responsive_header_register_menus(){
@@ -30,7 +30,7 @@ add_action('widgets_init', 'feature_responsive_header_register_sidebars');
 function feature_responsive_header_template() {
   include_once "feature-responsive-header.template.php";
 }
-add_action("modularity_template_header", "feature_responsive_header_template");
+add_action("wp_body_open", "feature_responsive_header_template", 5);
 
 function feature_responsive_header_menu() {
   if (has_nav_menu('header_menu')) {
