@@ -44,17 +44,6 @@ function feature_responsive_header_menu() {
 }
 add_action("feature_responsive_header_end", "feature_responsive_header_menu", 20);
 
-function feature_responsive_header_menu_trigger() {
-  if (has_nav_menu('header_menu')) {
-    ?>
-      <div class="feature-responsive-header__menu-trigger">
-        <a href="#menu" title="Menu"><span></span><span></span><span></span></a>
-      </div>
-    <?php
-  }
-}
-add_action("feature_responsive_header_end", "feature_responsive_header_menu_trigger", 30);
-
 function feature_responsive_header_widgets() {
   if (is_active_sidebar('header_widgets')) {
     ?>
@@ -65,3 +54,14 @@ function feature_responsive_header_widgets() {
   }
 }
 add_action("feature_responsive_header_end", "feature_responsive_header_widgets", 40);
+
+function feature_responsive_header_menu_trigger() {
+  if (has_nav_menu('header_menu')) {
+    ?>
+      <div class="feature-responsive-header__menu-trigger">
+        <a href="#menu" title="Menu"><span></span><span></span><span></span></a>
+      </div>
+    <?php
+  }
+}
+add_action("feature_responsive_header_end", "feature_responsive_header_menu_trigger", 50);

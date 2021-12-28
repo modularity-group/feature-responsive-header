@@ -84,7 +84,9 @@ body {
     padding-top: 5px;
 
     @media (min-width: 1000px) {
-      display: none;
+      body:not(.is-header-mode-mobilefirst) & {
+        display: none;
+      }
     }
 
     body.is-header-active-modalmenu & {
@@ -93,7 +95,7 @@ body {
       }
     }
 
-    body.is-header-mode-modalmenu.is-header-active-modalmenu & {
+    body.is-header-mode-mobilefirst.is-header-active-modalmenu & {
       z-index: 201;
     }
 
@@ -142,7 +144,7 @@ body {
       text-align: left;
     }
 
-    body.is-header-mode-modalmenu & {
+    body.is-header-mode-mobilefirst & {
       display: none;
       text-align: left;
     }
@@ -174,7 +176,7 @@ body {
           }
         }
 
-        body.is-header-mode-modalmenu.is-header-active-modalmenu & {
+        body.is-header-mode-mobilefirst.is-header-active-modalmenu & {
           display: block;
         }
       }
@@ -192,7 +194,7 @@ body {
             padding-left: 0;
           }
 
-          body.is-header-mode-modalmenu & {
+          body.is-header-mode-mobilefirst & {
             padding-left: 0;
           }
         }
@@ -207,7 +209,7 @@ body {
             padding-top: 1rem;
           }
 
-          body.is-header-mode-modalmenu & {
+          body.is-header-mode-mobilefirst & {
             padding-top: 1rem;
           }
 
@@ -217,7 +219,7 @@ body {
             }
           }
 
-          body.is-header-mode-modalmenu.is-header-active-modalmenu & {
+          body.is-header-mode-mobilefirst.is-header-active-modalmenu & {
             margin: 0;
           }
         }
@@ -272,7 +274,7 @@ body {
         }
       }
 
-      body.is-header-mode-modalmenu.is-header-active-modalmenu & {
+      body.is-header-mode-mobilefirst.is-header-active-modalmenu & {
         display: none;
       }
     }
@@ -300,7 +302,7 @@ body {
       }
     }
 
-    body.is-header-mode-modalmenu.is-header-active-modalmenu & {
+    body.is-header-mode-mobilefirst.is-header-active-modalmenu & {
       display: block;
     }
   }

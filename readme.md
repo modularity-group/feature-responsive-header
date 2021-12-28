@@ -30,7 +30,7 @@ You may switch the header's mode with setting a body class:
 
 ```
 add_filter('body_class', function($classes) {
-    return array_merge($classes, array( 'is-header-mode-modalmenu' ));
+    return array_merge($classes, array( 'is-header-mode-mobilefirst' ));
 });
 ```
 
@@ -47,7 +47,7 @@ add_action("feature_responsive_header_end", "feature_responsive_header_widgets",
 
 ---
 
-1.1.0 | enable layout modes, update body classname, simplify widgets ...
+1.1.0 | add mobile first mode, update state classnames, simplify widgets
 
 1.0.6 | update hooks with `config-site-template`
 
