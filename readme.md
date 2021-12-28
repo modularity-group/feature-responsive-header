@@ -6,7 +6,7 @@ Creates a solid site header with logo, menus for desktop and mobile and widgets.
 
 ---
 
-Version: 1.0.6
+Version: 1.1.0 [wip]
 
 Author: Ben @ https://modularity.group
 
@@ -26,6 +26,14 @@ You may customize the header's base styles with setting the variables:
 }
 ```
 
+You may switch the header's mode with setting a body class:
+
+```
+add_filter('body_class', function($classes) {
+    return array_merge($classes, array( 'is-header-mode-modalmenu' ));
+});
+```
+
 You can customize most features and output with the existing actions:
 
 ```
@@ -38,6 +46,8 @@ add_action("feature_responsive_header_end", "feature_responsive_header_widgets",
 ```
 
 ---
+
+1.1.0 | enable layout modes, update body classname, simplify widgets ...
 
 1.0.6 | update hooks with `config-site-template`
 
