@@ -43,11 +43,12 @@ add_action("modularity_template_header", "feature_responsive_header_template");
 add_action("feature_responsive_header_end", "feature_responsive_header_menu", 20);
 add_action("feature_responsive_header_end", "feature_responsive_header_menu_trigger", 30);
 add_action("feature_responsive_header_end", "feature_responsive_header_widgets", 40);
+add_action("feature_responsive_header_menu_end", "your_something");
 ```
 
 ---
 
-1.1.0 | add mobile first mode, update state classnames, simplify widgets
+1.1.0 | add mobile first mode, update state classnames, simplify widgets, tweak menu content
 
 1.0.6 | update hooks with `config-site-template`
 
