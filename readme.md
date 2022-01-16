@@ -6,7 +6,7 @@ Creates a solid site header with logo, menus for desktop and mobile and widgets.
 
 ---
 
-Version: 1.1.0 [wip]
+Version: 1.1.0
 
 Author: Ben @ https://modularity.group
 
