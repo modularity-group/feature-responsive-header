@@ -48,6 +48,8 @@ add_action("feature_responsive_header_menu_end", "your_something");
 
 ---
 
+1.1.1 | [wip] add modal menu inner wrap for scrolling on overflow
+
 1.1.0 | add mobile first mode, update state classnames, simplify widgets, tweak menu content
 
 1.0.6 | update hooks with `config-site-template`

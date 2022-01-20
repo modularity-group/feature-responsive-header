@@ -144,6 +144,8 @@ body {
       text-align: left;
     }
 
+    &-inner {}
+
     body.is-header-mode-mobilefirst & {
       display: none;
       text-align: left;

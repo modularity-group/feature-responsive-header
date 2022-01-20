@@ -34,6 +34,8 @@ add_action("wp_body_open", "feature_responsive_header_template", 5);
 
 function feature_responsive_header_menu() {
   echo '<div class="feature-responsive-header__menu">';
+  echo '<div class="feature-responsive-header__menu-inner">';
+
   if (has_nav_menu('header_menu')) {
     wp_nav_menu(array(
       'theme_location' => 'header_menu',
@@ -51,6 +53,8 @@ function feature_responsive_header_menu() {
     ));
   }
   do_action("feature_responsive_header_menu_end");
+
+  echo '</div>';
   echo '</div>';
 }
 add_action("feature_responsive_header_end", "feature_responsive_header_menu", 20);
