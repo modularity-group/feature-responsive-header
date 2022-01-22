@@ -6,7 +6,7 @@ Creates a solid site header with logo, menus for desktop and mobile and widgets.
 
 ---
 
-Version: 1.1.0
+Version: 1.1.1
 
 Author: Ben @ https://modularity.group
 
@@ -48,7 +48,7 @@ add_action("feature_responsive_header_menu_end", "your_something");
 
 ---
 
-1.1.1 | [wip] add modal menu inner wrap for scrolling on overflow
+1.1.1 | add modal menu inner wrap for scrolling on overflow
 
 1.1.0 | add mobile first mode, update state classnames, simplify widgets, tweak menu content
 
