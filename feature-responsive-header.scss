@@ -37,6 +37,10 @@ body {
     display: flex;
     align-items: center;
 
+    > * {
+      width: var(--base-layout-width);
+    }
+
     > .site-layout-container__inner {
       display: flex;
       align-items: center;
@@ -71,7 +75,7 @@ body {
       height: var(--header-height);
 
       img {
-        max-height: 100%;
+        max-height: var(--header-height);
         width: auto;
         margin: 0 var(--base-space) 0 0;
         padding: 0.5rem 0;
