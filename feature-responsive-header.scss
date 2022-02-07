@@ -24,7 +24,7 @@ body {
   right: 0;
   top: 0;
   z-index: 200;
-  padding: 1rem var(--header-offset);
+  padding: calc(var(--header-offset)/2) 0;
   background-color: var(--header-background);
   height: var(--header-height);
   display: flex;
