@@ -2,6 +2,8 @@ jQuery(function($){
 
   const $window = $(window);
   const $body = $('body');
+  let headerStateClass = 'is-scrolled';
+  headerStateClass+= $body.hasClass('is-header-mode-mobileonscroll') ? ' is-header-mode-mobilefirst' : '';
 
   $('a[href="#menu"]').click(function(e){
     e.preventDefault();
@@ -24,10 +26,10 @@ jQuery(function($){
     }
   }
 
-  setHeaderState('is-scrolled');
+  setHeaderState(headerStateClass);
 
   $window.on('scroll', function() {
-    setHeaderState('is-scrolled');
+    setHeaderState(headerStateClass);
   });
 
 });

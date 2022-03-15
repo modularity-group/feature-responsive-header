@@ -6,7 +6,7 @@ Creates a solid site header with logo, menus for desktop and mobile and widgets.
 
 ---
 
-Version: 1.1.3
+Version: 1.1.4 (rc1)
 
 Author: Ben @ https://modularity.group
 
@@ -30,7 +30,7 @@ You may switch the header's mode with setting a body class:
 
 ```
 add_filter('body_class', function($classes) {
-    return array_merge($classes, array( 'is-header-mode-mobilefirst' ));
+    return array_merge($classes, array('is-header-mode-mobilefirst')); // or 'is-header-mode-mobileonscroll'
 });
 ```
 
@@ -47,6 +47,8 @@ add_action("feature_responsive_header_menu_end", "your_something");
 ```
 
 ---
+
+1.1.4 | new header mode for mobile menu on scrolled
 
 1.1.3 | apply wide layout and fix logo size limit
 
