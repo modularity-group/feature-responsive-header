@@ -3,6 +3,7 @@ jQuery(function($){
   const $window = $(window);
   const $body = $('body');
   let headerStateClass = 'is-scrolled';
+  let headerStateClassDeep = 'is-scrolled-deep';
   headerStateClass+= $body.hasClass('is-header-mode-mobileonscroll') ? ' is-header-mode-mobilefirst' : '';
 
   $('a[href="#menu"]').click(function(e){
@@ -18,18 +19,21 @@ jQuery(function($){
     $body.removeClass('is-header-active-modalmenu');
   });
 
-  function setHeaderState(stateClass) {
+  function setHeaderState(stateClass, stateClassDeep) {
     if ($window.scrollTop() > 0) {
       $body.addClass(stateClass);
+      if ($window.scrollTop() > $window.height()) {
+        $body.addClass(stateClassDeep);
+      }
     } else {
-      $body.removeClass(stateClass);
+      $body.removeClass(stateClass).removeClass(stateClassDeep);
     }
   }
 
-  setHeaderState(headerStateClass);
+  setHeaderState(headerStateClass, headerStateClassDeep);
 
   $window.on('scroll', function() {
-    setHeaderState(headerStateClass);
+    setHeaderState(headerStateClass, headerStateClassDeep);
   });
 
 });

@@ -12,10 +12,6 @@
 
 body {
   padding-top: var(--header-height);
-
-  // &.is-header-active-modalmenu {
-  //   overflow: hidden;
-  // }
 }
 
 .feature-responsive-header {
@@ -30,7 +26,7 @@ body {
   display: flex;
 
   @media (max-width: 999px) {
-    padding: 0.5rem var(--header-offset);
+    padding: calc(var(--header-offset) / 3) 0;
   }
 
   .site-layout-container {

@@ -6,7 +6,7 @@ Creates a solid site header with logo, menus for desktop and mobile and widgets.
 
 ---
 
-Version: 1.1.4 (rc1)
+Version: 1.1.4 (rc2)
 
 Author: Ben @ https://modularity.group
 
@@ -48,7 +48,7 @@ add_action("feature_responsive_header_menu_end", "your_something");
 
 ---
 
-1.1.4 | new header mode for mobile menu on scrolled
+1.1.4 | new mode for mobile menu on scrolled, fixed mobile padding, new state `is-scrolled-deep`
 
 1.1.3 | apply wide layout and fix logo size limit
 
