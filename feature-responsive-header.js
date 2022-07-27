@@ -22,8 +22,11 @@ jQuery(function($){
   function setHeaderState(stateClass, stateClassDeep) {
     if ($window.scrollTop() > 0) {
       $body.addClass(stateClass);
-      if ($window.scrollTop() > $window.height()) {
+      if ($window.scrollTop() > $window.height()+10) {
         $body.addClass(stateClassDeep);
+      }
+      else {
+        $body.removeClass(stateClassDeep);
       }
     } else {
       $body.removeClass(stateClass).removeClass(stateClassDeep);
